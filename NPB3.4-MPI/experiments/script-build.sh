@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd kernel_stats
+mkdir ../bin
+cd ../kernel_stats
 make
 cd ..
 for p in cg ep is mg ft; do
