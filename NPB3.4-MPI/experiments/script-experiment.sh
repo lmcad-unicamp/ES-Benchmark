@@ -1,9 +1,13 @@
 #!/bin/bash
 
-mkdir -p experiment
-cd experiment
+mkdir -p results
+cd results
 
-/usr/bin/time -o CG-A-TIME.out -p  mpirun -n 2 ../../bin/cg.A.x 1> CG-A.out 2> CG-A.err
-/usr/bin/time -o CG-B-TIME.out -p  mpirun -n 2 ../../bin/cg.B.x 1> CG-B.out 2> CG-B.err
-/usr/bin/time -o CG-C-TIME.out -p  mpirun -n 2 ../../bin/cg.C.x 1> CG-C.out 2> CG-C.err
-#/usr/bin/time -o CG-D-TIME.out -p  mpirun -n 2 ../bin/cg.D.x 1> CG-D.out 2> CG-D.err
+size='C'
+threads=4
+
+timeout 120 /usr/bin/time -o ep-$size-TIME-$threads.out -p  mpirun -n $threads ../bin/ep.$size.x 1> ep-$size.$threads.out 2> ep-$size.$threads.err
+timeout 120 /usr/bin/time -o is-$size-TIME-$threads.out -p  mpirun -n $threads ../bin/is.$size.x 1> is-$size.$threads.out 2> is-$size.$threads.err
+timeout 120 /usr/bin/time -o mg-$size-TIME-$threads.out -p  mpirun -n $threads ../bin/mg.$size.x 1> mg-$size.$threads.out 2> mg-$size.$threads.err
+timeout 120 /usr/bin/time -o ft-$size-TIME-$threads.out -p  mpirun -n $threads ../bin/ft.$size.x 1> ft-$size.$threads.out 2> ft-$size.$threads.err
+timeout 120 /usr/bin/time -o cg-$size-TIME-$threads.out -p  mpirun -n $threads ../bin/cg.$size.x 1> cg-$size.$threads.out 2> cg-$size.$threads.err

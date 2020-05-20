@@ -16,7 +16,7 @@ typedef enum {false, true} bool;
 unsigned int current_iteration;
 double init_time;
 double begin_time;
-bool early_stop = false;
+bool early_stop = true;
 
 double get_current_time();
 int get_iteration_();

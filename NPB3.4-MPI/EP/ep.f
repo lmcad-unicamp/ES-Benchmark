@@ -199,7 +199,6 @@ c   have more numbers to generate than others
 
       do 150 k = 1, np
          call begin_timestep()
-
          kk = k_offset + k 
          t1 = s
          t2 = an

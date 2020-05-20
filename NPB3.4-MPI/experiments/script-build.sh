@@ -1,6 +1,10 @@
 #!/bin/bash
 
-cd ../kernel_stats
+cd kernel_stats
 make
 cd ..
-make suite
+for p in cg ep is mg ft; do
+  for c in A C; do
+    make $p CLASS=$c
+  done
+done
