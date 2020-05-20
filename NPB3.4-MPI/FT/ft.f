@@ -94,6 +94,8 @@ c---------------------------------------------------------------------
       logical verified
       character class
 
+      call init_timestep()
+
       call MPI_Init(ierr)
 
 c---------------------------------------------------------------------
@@ -143,6 +145,8 @@ c---------------------------------------------------------------------
       if (timers_enabled) call timer_stop(T_fft)
 
       do iter = 1, niter
+         call begin_timestep()
+
          if (timers_enabled) call timer_start(T_evolve)
          call evolve(u0, u1, twiddle, 
      >               dims(1,1), dims(2,1), dims(3,1))
@@ -154,6 +158,8 @@ c---------------------------------------------------------------------
          if (timers_enabled) call timer_start(T_checksum)
          call checksum(iter, u2, dims(1,1), dims(2,1), dims(3,1))
          if (timers_enabled) call timer_stop(T_checksum)
+
+         call end_timestep()
       end do
 
       call verify(niter, verified, class)

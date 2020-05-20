@@ -14,7 +14,7 @@ c
         logical  convertdouble
         parameter (convertdouble = .false.)
         character*11 compiletime
-        parameter (compiletime='19 May 2020')
+        parameter (compiletime='20 May 2020')
         character*3 npbversion
         parameter (npbversion='3.4')
         character*6 cs1
@@ -27,7 +27,7 @@ c
         parameter (cs4='(none)')
         character*3 cs5
         parameter (cs5='-O3')
-        character*9 cs6
-        parameter (cs6='$(FFLAGS)')
+        character*43 cs6
+        parameter (cs6='$(FFLAGS) -O ../kernel_stats/kernel_stats.o')
         character*6 cs7
         parameter (cs7='randi8')

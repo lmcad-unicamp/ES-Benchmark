@@ -66,7 +66,7 @@ c---------------------------------------------------------------------
        data t_recs/'total', 'i/o', 'rhs', 'xsolve', 'ysolve', 'zsolve', 
      >             'bpack', 'exch', 'xcomm', 'ycomm', 'zcomm',
      >             ' totcomp', ' totcomm'/
-
+       call init_timestep()
        call setup_mpi
        if (.not. active) goto 999
 
@@ -209,6 +209,7 @@ c---------------------------------------------------------------------
        call timer_start(1)
 
        do  step = 1, niter
+          call begin_timestep()
 
           if (node .eq. root) then
              if (mod(step, 20) .eq. 0 .or. step .eq. niter .or.
@@ -234,6 +235,7 @@ c---------------------------------------------------------------------
                   idump = idump + 1
               endif
           endif
+          call end_timestep()
        end do
 
        call timer_start(2)

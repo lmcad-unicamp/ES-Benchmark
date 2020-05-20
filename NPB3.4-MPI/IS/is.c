@@ -299,9 +299,9 @@ long     D_test_index_array[TEST_ARRAY_SIZE] =
 /************************/
 /* stop early functions */
 /************************/
-extern void init_timestep();
-extern void begin_timestep();
-extern void end_timestep();
+extern void init_timestep_();
+extern void begin_timestep_();
+extern void end_timestep_();
 
 /***********************/
 /* function prototypes */
@@ -944,7 +944,7 @@ int main( int argc, char **argv )
 
     double          timecounter, maxtime;
 
-    init_timestep();
+    init_timestep_();
 
 
 /*  Initialize MPI */
@@ -1069,8 +1069,10 @@ int main( int argc, char **argv )
 /*  This is the main iteration */
     for( iteration=1; iteration<=MAX_ITERATIONS; iteration++ )
     {
+        begin_timestep_();
         if( my_rank == 0 && CLASS != 'S' ) printf( "        %d\n", iteration );
         rank( iteration );
+        end_timestep_();
     }
 
 

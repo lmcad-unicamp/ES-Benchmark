@@ -82,6 +82,7 @@ c---------------------------------------------------------------------------c
      >            'interp', 'norm2u3', 'comm3', 'rcomm',
      >            ' totcomp', ' totcomm'/
 
+      call init_timestep()
 
       call mpi_init(ierr)
       call mpi_comm_rank(mpi_comm_world, me, ierr)
@@ -287,12 +288,16 @@ c---------------------------------------------------------------------
       oldu = rnmu
 
       do  it=1,nit
+         call begin_timestep()
+
          if (it.eq.1 .or. it.eq.nit .or. mod(it,5).eq.0) then
             if (me .eq. root) write(*,80) it
    80       format('  iter ',i4)
          endif
          call mg3P(u,v,r,a,c,n1,n2,n3,k)
          call resid(u,v,r,n1,n2,n3,a,k)
+
+         call end_timestep()
       enddo
 
 

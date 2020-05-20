@@ -99,7 +99,7 @@ CFLAGS	= -O3
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
-CLINKFLAGS = $(CFLAGS)
+CLINKFLAGS = $(CFLAGS) -O ../kernel_stats/kernel_stats.o
 
 
 #---------------------------------------------------------------------------

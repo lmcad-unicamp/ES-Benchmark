@@ -13,18 +13,26 @@
 # Comments start with "#" as the first character on a line. 
 # No blank lines. 
 # The following example builds sample sizes of all benchmarks. 
-#ft	S
-#mg	S
+ft	S
+mg	S
 #sp	S
 #lu	S
 #bt	S
-#is	S
 #ep	S
 #cg	S
-#dt	S
-cg	S
-cg	A
-cg	B
-cg	C
-cg	D
-cg	E
+#cg	A
+#cg	B
+#cg	C
+#cg	D
+#cg	E
+#ep	C
+#mg	C
+#mg	A
+#mg	B
+#ft	A
+#ft	B
+#ft	C
+is	S
+is	A
+is	B
+is	C
