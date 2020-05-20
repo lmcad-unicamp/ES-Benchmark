@@ -32,7 +32,7 @@ void end_timestep_() {
 
   print_timestep(PRINT_STATS, end_time);
 
-  if(stop_early && current_iteration == STOP_IN)
+  if(early_stop && current_iteration == STOP_IN)
     MPI_Abort(MPI_COMM_WORLD, 0);
 }
 
