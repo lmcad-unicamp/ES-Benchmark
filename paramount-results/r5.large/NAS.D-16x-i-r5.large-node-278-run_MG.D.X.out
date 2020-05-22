@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------
-[[13537,1],0]: A high-performance Open MPI point-to-point messaging module
+[[6668,1],10]: A high-performance Open MPI point-to-point messaging module
 was unable to find any relevant network interfaces:
 
 Module: OpenFabrics (openib)
-  Host: ip-172-31-3-90
+  Host: ip-172-31-49-75
 
 Another transport will be used instead, although this may result in
 lower performance.
@@ -16,23 +16,22 @@ btl_base_warn_component_unused to 0.
  NAS Parallel Benchmarks 3.4 -- MG Benchmark
 
  No input file. Using compiled defaults 
- Size:  512x 512x 512  (class C)
- Iterations:   20
- Total number of processes:      2
+ Size: 1024x1024x1024  (class D)
+ Iterations:   50
+ Total number of processes:     32
 
-[ip-172-31-3-90:27283] 1 more process has sent help message help-mpi-btl-base.txt / btl:no-nics
-[ip-172-31-3-90:27283] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
 
- Initialization time:           5.533 seconds
+ Initialization time:           2.726 seconds
 
-Init time,6.271436
+Init time,3.162027
   iter    1
-Iteration,1,8.313191,2.041336
-Iteration,2,10.140934,1.827689
-Iteration,3,11.965314,1.824328
-Iteration,4,13.784528,1.818801
+Iteration,1,4.197461,1.035144
+[ip-172-31-49-171:04486] 31 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-49-171:04486] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Iteration,2,5.225123,1.027388
+Iteration,3,6.262801,1.037362
+Iteration,4,7.312584,1.049520
   iter    5
-Iteration,5,15.618702,1.833751
 --------------------------------------------------------------------------
 MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
 with errorcode 0.
@@ -41,4 +40,6 @@ NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
 You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
-[ip-172-31-3-90:27283] 1 more process has sent help message help-mpi-api.txt / mpi-abort
+Iteration,5,8.349624,1.036760
+[ip-172-31-49-171:04486] 31 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-49-171:04486] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491
