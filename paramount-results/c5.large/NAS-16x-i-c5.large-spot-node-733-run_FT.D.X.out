@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------
+[[50728,1],4]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-1-155
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 2048x1024x1024  (class D)
+ Iterations          :             25
+ Number of processes :             32
+ Processor array     :         1x  32
+ Layout type         :             1D
+[ip-172-31-14-108:06036] 31 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-14-108:06036] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-0-4][[50728,1],17][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.12.22 failed: Connection refused (111)
+[ip-172-31-14-88][[50728,1],15][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.0.4 failed: Connection refused (111)
+[ip-172-31-12-22][[50728,1],19][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.12.50 failed: Connection refused (111)
+[ip-172-31-14-215][[50728,1],13][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.14.88 failed: Connection refused (111)
+[ip-172-31-4-171][[50728,1],27][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.0.227 failed: Connection refused (111)
+--------------------------------------------------------------------------
+mpirun noticed that process rank 16 with PID 3823 on node 54.83.115.158 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+11 total processes killed (some possibly by mpirun during cleanup)
+[ip-172-31-14-108:06036] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

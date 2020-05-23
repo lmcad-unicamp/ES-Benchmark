@@ -1,0 +1,60 @@
+--------------------------------------------------------------------------
+[[61782,1],2]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-8-238
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Backtrace for this error:
+#0  0x7f85f535f32a
+#1  0x7f85f535e503
+#2  0x7f85f49dbf1f
+#3  0x7f85f4b2bf2d
+#4  0x55b045825dc5
+#5  0x55b045833e28
+#6  0x55b04582570e
+#7  0x7f85f49beb96
+#8  0x55b045825749
+#9  0xffffffffffffffff
+#0  0x7fe64eb2132a
+#1  0x7fe64eb20503
+#2  0x7fe64e19df1f
+#3  0x7fe64e2edf2d
+#4  0x556c93facdc5
+#5  0x556c93fbae28
+#6  0x556c93fac70e
+#7  0x7fe64e180b96
+#8  0x556c93fac749
+#9  0xffffffffffffffff
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 18063 on node 3.93.39.96 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[ip-172-31-8-238:17984] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-8-238:17984] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-8-238:17984] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

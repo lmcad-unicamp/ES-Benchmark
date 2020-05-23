@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------
+[[37159,1],1]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-8-238
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size: 1024x1024x1024  (class D)
+ Iterations:   50
+ Total number of processes:     32
+
+
+ Initialization time:           2.875 seconds
+
+Init time,3.372169
+  iter    1
+Iteration,1,4.517705,1.145261
+[ip-172-31-8-238:09777] 31 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-8-238:09777] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Iteration,2,5.667147,1.149004
+Iteration,3,6.815270,1.147722
+Iteration,4,7.968491,1.152632
+  iter    5
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 30 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+Iteration,5,9.110535,1.141773
+[ip-172-31-8-238:09777] 29 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-8-238:09777] PMIX ERROR: NO-PERMISSIONS in file src/dstore/pmix_esh.c at line 530

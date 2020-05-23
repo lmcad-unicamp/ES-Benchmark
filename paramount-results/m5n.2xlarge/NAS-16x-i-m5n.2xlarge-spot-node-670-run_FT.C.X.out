@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------
+[[61328,1],64]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-3-108
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                :  512x 512x 512  (class C)
+ Iterations          :             20
+ Number of processes :            128
+ Processor array     :         1x 128
+ Layout type         :             1D
+
+ Initialization time =      0.8627
+
+Init time,1.400980
+ T =    1     Checksum =    5.195078707457D+02    5.149019699238D+02
+Iteration,1,1.705030,0.302993
+ T =    2     Checksum =    5.155422171134D+02    5.127578201997D+02
+Iteration,2,1.993724,0.288238
+ T =    3     Checksum =    5.144678022222D+02    5.122251847514D+02
+Iteration,3,2.282738,0.288651
+ T =    4     Checksum =    5.140150594328D+02    5.121090289018D+02
+Iteration,4,2.574196,0.291069
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 49 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-5-203][[61328,1],80][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.3.108 failed: Connection refused (111)
+[ip-172-31-1-62][[61328,1],112][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.7.81 failed: Connection refused (111)
+[ip-172-31-0-250:08761] 127 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-0-250:08761] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-0-250:08761] 114 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-0-250:08761] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

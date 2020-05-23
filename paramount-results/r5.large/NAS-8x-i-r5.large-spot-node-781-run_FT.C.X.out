@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------
+[[24534,1],10]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-1-166
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                :  512x 512x 512  (class C)
+ Iterations          :             20
+ Number of processes :             16
+ Processor array     :         1x  16
+ Layout type         :             1D
+
+ Initialization time =      1.6258
+
+Init time,3.321677
+ T =    1     Checksum =    5.195078707457D+02    5.149019699238D+02
+Iteration,1,4.644952,1.323234
+[ip-172-31-12-84:07657] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-12-84:07657] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ T =    2     Checksum =    5.155422171134D+02    5.127578201997D+02
+Iteration,2,5.877717,1.232643
+ T =    3     Checksum =    5.144678022222D+02    5.122251847514D+02
+Iteration,3,7.112156,1.234312
+ T =    4     Checksum =    5.140150594328D+02    5.121090289018D+02
+Iteration,4,8.342917,1.230614
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-2-212][[24534,1],2][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.12.84 failed: Connection refused (111)
+[ip-172-31-12-180][[24534,1],4][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.12.84 failed: Connection refused (111)
+[ip-172-31-12-84:07657] 8 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-12-84:07657] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

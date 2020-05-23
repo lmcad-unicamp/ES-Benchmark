@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------
+[[37829,1],72]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-10-171
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- CG Benchmark
+
+ Size:    1500000  (class D)
+ Iterations:   100
+ Number of processes:   128
+ Number of nonzeroes per row:       21
+ Eigenvalue shift:   500.000
+[ip-172-31-2-79:03082] 127 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-2-79:03082] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Init time,5.991887
+
+   iteration           ||r||                 zeta
+        1       0.56577972936108E-12   499.9996989885352
+Iteration,1,7.665848,1.673607
+        2       0.37330727691584E-15    49.1792921222637
+Iteration,2,9.334087,1.667661
+        3       0.39509602064206E-15    49.7621417780891
+Iteration,3,11.004372,1.669827
+        4       0.40856118657667E-15    50.2476108448560
+Iteration,4,12.674442,1.669572
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 104 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+        5       0.41981255944807E-15    50.6504113318692
+Iteration,5,14.343540,1.668617
+[ip-172-31-2-79:03082] 127 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-2-79:03082] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

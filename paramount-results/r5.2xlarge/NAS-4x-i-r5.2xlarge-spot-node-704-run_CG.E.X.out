@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------
+[[35949,1],8]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-12-67
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- CG Benchmark
+
+ Size:    9000000  (class E)
+ Iterations:   100
+ Number of processes:    32
+ Number of nonzeroes per row:       26
+ Eigenvalue shift:  1500.000
+[ip-172-31-12-104:16558] 31 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-12-104:16558] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Init time,167.296610
+
+   iteration           ||r||                 zeta
+        1       0.22809197458482E-11  1499.9998413806252
+Iteration,1,270.112467,102.815459
+        2       0.64118049090368E-15    72.8774756683854
+Iteration,2,374.185531,104.072751
+        3       0.66780315950813E-15    73.2915890919776
+Iteration,3,476.759637,102.573742
+        4       0.67659818128280E-15    73.6707042243743
+Iteration,4,578.774170,102.014185
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 16 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+        5       0.68050917124631E-15    74.0174332195031
+Iteration,5,680.844431,102.069911
+[ip-172-31-12-104:16558] 31 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-12-104:16558] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

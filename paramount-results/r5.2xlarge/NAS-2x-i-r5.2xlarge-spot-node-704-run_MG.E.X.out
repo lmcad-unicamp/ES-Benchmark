@@ -1,0 +1,248 @@
+--------------------------------------------------------------------------
+[[33782,1],11]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-12-67
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+#0  0x7feb69aed32a
+#1  0x7feb69aec503
+#2  0x7feb69169f1f
+#3  0x7feb692b9f2d
+#4  0x564ae69f1dc5
+#5  0x564ae69ffed8
+#6  0x564ae69f170e
+#7  0x7feb6914cb96
+#8  0x564ae69f1749
+#9  0xffffffffffffffff
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+#0  0x7f87cdbc232a
+#1  0x7f87cdbc1503
+#2  0x7f87cd23ef1f
+#3  0x7f87cd38ef2d
+#4  0x555f82e6fdc5
+#5  0x555f82e7ded8
+#6  0x555f82e6f70e
+#7  0x7f87cd221b96
+#8  0x555f82e6f749
+#9  0xffffffffffffffff
+#0  0x7fed7713332a
+#1  0x7fed77132503
+#2  0x7fed767aff1f
+#3  0x7fed768fff2d
+#4  0x558c5b4e5dc5
+#5  0x558c5b4f3ed8
+#6  0x558c5b4e570e
+#7  0x7fed76792b96
+#8  0x558c5b4e5749
+#9  0xffffffffffffffff
+#0  0x7f2e279d032a
+#1  0x7f2e279cf503
+#2  0x7f2e2704cf1f
+#3  0x7f2e2719cf2d
+#4  0x556bda369dc5
+#5  0x556bda377ed8
+#6  0x556bda36970e
+#7  0x7f2e2702fb96
+#8  0x556bda369749
+#9  0xffffffffffffffff
+#0  0x7fa36868b32a
+#1  0x7fa36868a503
+#2  0x7fa367d07f1f
+#3  0x7fa367e57f2d
+#4  0x564a782bddc5
+#5  0x564a782cbed8
+#6  0x564a782bd70e
+#7  0x7fa367ceab96
+#8  0x564a782bd749
+#9  0xffffffffffffffff
+#0  0x7f9292d7f32a
+#1  0x7f9292d7e503
+#2  0x7f92923fbf1f
+#3  0x7f929254bf2d
+#0  0x7fcb2959632a
+#1  0x7fcb29595503
+#2  0x7fcb28c12f1f
+#3  0x7fcb28d62f2d
+#4  0x5623460fedc5
+#5  0x56234610ced8
+#6  0x5623460fe70e
+#7  0x7fcb28bf5b96
+#8  0x5623460fe749
+#0  0x7fe79d69732a
+#1  0x7fe79d696503
+#2  0x7fe79cd13f1f
+#3  0x7fe79ce63f2d
+#4  0x55b2eabe6dc5
+#5  0x55b2eabf4ed8
+#6  0x55b2eabe670e
+#7  0x7fe79ccf6b96
+#8  0x55b2eabe6749
+#9  0xffffffffffffffff
+#4  0x556cd8b1adc5
+#5  0x556cd8b28ed8
+#6  0x556cd8b1a70e
+#7  0x7f92923deb96
+#8  0x556cd8b1a749
+#9  0xffffffffffffffff
+#9  0xffffffffffffffff
+#0  0x7f6e1734532a
+#1  0x7f6e17344503
+#2  0x7f6e169c1f1f
+#3  0x7f6e16b11f2d
+#4  0x55617c5d2dc5
+#5  0x55617c5e0ed8
+#6  0x55617c5d270e
+#7  0x7f6e169a4b96
+#8  0x55617c5d2749
+#9  0xffffffffffffffff
+#0  0x7f144d19732a
+#1  0x7f144d196503
+#2  0x7f144c813f1f
+#3  0x7f144c963f2d
+#4  0x564228e20dc5
+#5  0x564228e2eed8
+#6  0x564228e2070e
+#7  0x7f144c7f6b96
+#8  0x564228e20749
+#9  0xffffffffffffffff
+#0  0x7f9ed19ab32a
+#1  0x7f9ed19aa503
+#2  0x7f9ed1027f1f
+#3  0x7f9ed1177f2d
+#4  0x5655239e4dc5
+#5  0x5655239f2ed8
+#6  0x5655239e470e
+#7  0x7f9ed100ab96
+#8  0x5655239e4749
+#9  0xffffffffffffffff
+#0  0x7f3033d4f32a
+#1  0x7f3033d4e503
+#2  0x7f30333cbf1f
+#3  0x7f303351bf2d
+#4  0x559a98125dc5
+#5  0x559a98133ed8
+#6  0x559a9812570e
+#7  0x7f30333aeb96
+#8  0x559a98125749
+#9  0xffffffffffffffff
+#0  0x7f4e41e5532a
+#1  0x7f4e41e54503
+#2  0x7f4e414d1f1f
+#3  0x7f4e41621f2d
+#4  0x55b9195d1dc5
+#5  0x55b9195dfed8
+#6  0x55b9195d170e
+#7  0x7f4e414b4b96
+#8  0x55b9195d1749
+#9  0xffffffffffffffff
+#0  0x7fd7543b732a
+#1  0x7fd7543b6503
+#2  0x7fd753a33f1f
+#3  0x7fd753b83f2d
+#4  0x55c9e7221dc5
+#5  0x55c9e722fed8
+#6  0x55c9e722170e
+#7  0x7fd753a16b96
+#8  0x55c9e7221749
+#9  0xffffffffffffffff
+#0  0x7f254510532a
+#1  0x7f2545104503
+#2  0x7f2544781f1f
+#3  0x7f25448d1f2d
+#4  0x560cfd640dc5
+#5  0x560cfd64eed8
+#6  0x560cfd64070e
+#7  0x7f2544764b96
+#8  0x560cfd640749
+#9  0xffffffffffffffff
+#0  0x7f98502ec32a
+#1  0x7f98502eb503
+#2  0x7f984f968f1f
+#3  0x7f984fab8f2d
+#4  0x55f2b8566dc5
+#5  0x55f2b8574ed8
+#6  0x55f2b856670e
+#7  0x7f984f94bb96
+#8  0x55f2b8566749
+#9  0xffffffffffffffff
+--------------------------------------------------------------------------
+mpirun noticed that process rank 10 with PID 11613 on node 75.101.190.200 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[ip-172-31-12-104:20277] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-12-104:20277] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-12-104:20277] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

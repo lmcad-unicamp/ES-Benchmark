@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------
+[[50237,1],54]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-0-147
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size: 2048x2048x2048  (class E)
+ Iterations:   50
+ Total number of processes:     64
+
+[ip-172-31-4-37:04473] 63 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-4-37:04473] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+An MPI communication peer process has unexpectedly disconnected.  This
+usually indicates a failure in the peer process (e.g., a crash or
+otherwise exiting without calling MPI_FINALIZE first).
+
+Although this local MPI process will likely now behave unpredictably
+(it may even hang or crash), the root cause of this problem is the
+failure of the peer -- that is what you need to investigate.  For
+example, there may be a core file that you can examine.  More
+generally: such peer hangups are frequently caused by application bugs
+or other external events.
+
+  Local host: ip-172-31-11-209
+  Local PID:  2973
+  Peer host:  ip-172-31-8-194
+--------------------------------------------------------------------------
+[ip-172-31-11-209][[50237,1],43][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.8.194 failed: Connection refused (111)
+--------------------------------------------------------------------------
+mpirun noticed that process rank 38 with PID 3067 on node 18.235.0.23 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+11 total processes killed (some possibly by mpirun during cleanup)
+[ip-172-31-4-37:04473] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

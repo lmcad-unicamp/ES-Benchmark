@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------
+[[52889,1],4]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-5-170
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- IS Benchmark
+
+ Size:  34359738368  (class E)
+ Iterations:   10
+ Number of processes:     32
+
+ ERROR: number of processes 32 not within range 64-1024
+ Exiting program!
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[52889,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+[ip-172-31-4-37:07133] 31 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-4-37:07133] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-4-37:07133] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

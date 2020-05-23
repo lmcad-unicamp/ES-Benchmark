@@ -1,0 +1,79 @@
+Warning: Permanently added '3.91.174.28' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.94.153.243' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.205.191.188' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.221.158.23' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.93.39.96' (ECDSA) to the list of known hosts.
+Warning: Permanently added '54.160.40.184' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.226.253.23' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.227.230.47' (ECDSA) to the list of known hosts.
+Warning: Permanently added '100.27.38.122' (ECDSA) to the list of known hosts.
+Warning: Permanently added '54.157.108.88' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.93.40.100' (ECDSA) to the list of known hosts.
+Warning: Permanently added '18.204.42.192' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.201.42.57' (ECDSA) to the list of known hosts.
+Warning: Permanently added '100.24.119.228' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.231.102.18' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.239.233.159' (ECDSA) to the list of known hosts.
+Warning: Permanently added '18.208.200.91' (ECDSA) to the list of known hosts.
+Warning: Permanently added '35.170.71.190' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.221.150.125' (ECDSA) to the list of known hosts.
+Warning: Permanently added '54.236.61.119' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.227.17.186' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.215.185.32' (ECDSA) to the list of known hosts.
+Warning: Permanently added '54.83.238.75' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.201.5.250' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.235.13.75' (ECDSA) to the list of known hosts.
+Warning: Permanently added '35.173.49.198' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.201.13.231' (ECDSA) to the list of known hosts.
+Warning: Permanently added '18.204.35.224' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.235.121.46' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.235.89.184' (ECDSA) to the list of known hosts.
+Warning: Permanently added '100.26.251.78' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.232.131.85' (ECDSA) to the list of known hosts.
+--------------------------------------------------------------------------
+[[45304,1],51]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-9-77
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- CG Benchmark
+
+ Size:     150000  (class C)
+ Iterations:    75
+ Number of processes:   128
+ Number of nonzeroes per row:       15
+ Eigenvalue shift:   110.000
+Init time,1.525417
+
+   iteration           ||r||                 zeta
+        1       0.15531186829697E-12   109.9994423237398
+Iteration,1,1.602854,0.077392
+        2       0.46208264129503E-15    27.3920437146521
+Iteration,2,1.681970,0.079107
+        3       0.45737147998471E-15    28.0339761840268
+Iteration,3,1.759495,0.077351
+        4       0.45635407607581E-15    28.4191507551293
+Iteration,4,1.836326,0.076661
+        5       0.45697970475168E-15    28.6471670038896
+Iteration,5,1.913863,0.077388
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-8-238:02030] 127 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-8-238:02030] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-8-238:02030] 127 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-8-238:02030] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

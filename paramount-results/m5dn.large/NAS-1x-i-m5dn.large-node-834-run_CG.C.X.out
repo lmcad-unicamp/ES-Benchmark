@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------
+[[48413,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-63-52
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- CG Benchmark
+
+ Size:     150000  (class C)
+ Iterations:    75
+ Number of processes:     2
+ Number of nonzeroes per row:       15
+ Eigenvalue shift:   110.000
+Init time,4.260503
+[ip-172-31-63-52:15631] 1 more process has sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-63-52:15631] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+   iteration           ||r||                 zeta
+        1       0.34918028513489E-12   109.9994423237398
+Iteration,1,6.959199,2.698653
+        2       0.93261202935200E-15    27.3920437146530
+Iteration,2,9.671133,2.711777
+        3       0.94002966917904E-15    28.0339761840276
+Iteration,3,12.379502,2.708096
+        4       0.94986672029943E-15    28.4191507551296
+Iteration,4,15.090597,2.710822
+        5       0.95373147965057E-15    28.6471670038882
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+Iteration,5,17.786789,2.695930
+[ip-172-31-63-52:15631] 1 more process has sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-63-52:15631] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

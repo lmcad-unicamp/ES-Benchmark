@@ -1,0 +1,462 @@
+--------------------------------------------------------------------------
+[[51656,1],18]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-7-241
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+#0  0x7f8f0e6f032a
+#1  0x7f8f0e6ef503
+#2  0x7f8f0dd6cf1f
+#3  0x7f8f0debcf2d
+#4  0x55932bc1ddc5
+#5  0x55932bc2bed8
+#6  0x55932bc1d70e
+#7  0x7f8f0dd4fb96
+#0  0x7fc602d8332a
+#8  0x55932bc1d749
+#9  0xffffffffffffffff
+#1  0x7fc602d82503
+#2  0x7fc6023fff1f
+#3  0x7fc60254ff2d
+#4  0x5602656efdc5
+#5  0x5602656fded8
+#6  0x5602656ef70e
+#7  0x7fc6023e2b96
+#8  0x5602656ef749
+#9  0xffffffffffffffff
+#0  0x7ffb8cdd632a
+#0  0x7fb89c02332a
+#1  0x7fb89c022503
+#2  0x7fb89b69ff1f
+#3  0x7fb89b7eff2d
+#4  0x55a8afbbcdc5
+#5  0x55a8afbcaed8
+#6  0x55a8afbbc70e
+#7  0x7fb89b682b96
+#8  0x55a8afbbc749
+#9  0xffffffffffffffff
+#1  0x7ffb8cdd5503
+#2  0x7ffb8c452f1f
+#3  0x7ffb8c5a2f2d
+#4  0x55cf9eb2edc5
+#5  0x55cf9eb3ced8
+#6  0x55cf9eb2e70e
+#7  0x7ffb8c435b96
+#8  0x55cf9eb2e749
+#9  0xffffffffffffffff
+#0  0x7f230aa5c32a
+#0  0x7ff16b02932a
+#1  0x7ff16b028503
+#2  0x7ff16a6a5f1f
+#3  0x7ff16a7f5f2d
+#4  0x560a6b10ddc5
+#5  0x560a6b11bed8
+#6  0x560a6b10d70e
+#7  0x7ff16a688b96
+#8  0x560a6b10d749
+#9  0xffffffffffffffff
+#1  0x7f230aa5b503
+#2  0x7f230a0d8f1f
+#3  0x7f230a228f2d
+#4  0x5622b2b62dc5
+#5  0x5622b2b70ed8
+#6  0x5622b2b6270e
+#7  0x7f230a0bbb96
+#8  0x5622b2b62749
+#9  0xffffffffffffffff
+#0  0x7f7aa938032a
+#1  0x7f7aa937f503
+#2  0x7f7aa89fcf1f
+#3  0x7f7aa8b4cf2d
+#4  0x556d680c5dc5
+#5  0x556d680d3ed8
+#6  0x556d680c570e
+#7  0x7f7aa89dfb96
+#8  0x556d680c5749
+#9  0xffffffffffffffff
+#0  0x7f117a65332a
+#1  0x7f117a652503
+#2  0x7f1179ccff1f
+#3  0x7f1179e1ff2d
+#4  0x55e939e29dc5
+#5  0x55e939e37ed8
+#6  0x55e939e2970e
+#7  0x7f1179cb2b96
+#8  0x55e939e29749
+#9  0xffffffffffffffff
+#0  0x7f2ececa632a
+#0  0x7fdde378332a
+#1  0x7fdde3782503
+#2  0x7fdde2dfff1f
+#3  0x7fdde2f4ff2d
+#4  0x5629de579dc5
+#5  0x5629de587ed8
+#6  0x5629de57970e
+#7  0x7fdde2de2b96
+#8  0x5629de579749
+#9  0xffffffffffffffff
+#1  0x7f2ececa5503
+#2  0x7f2ece322f1f
+#3  0x7f2ece472f2d
+#4  0x5582b1dfcdc5
+#5  0x5582b1e0aed8
+#6  0x5582b1dfc70e
+#7  0x7f2ece305b96
+#8  0x5582b1dfc749
+#9  0xffffffffffffffff
+#0  0x7fb06fecf32a
+#1  0x7fb06fece503
+#2  0x7fb06f54bf1f
+#3  0x7fb06f69bf2d
+#4  0x55e13030bdc5
+#5  0x55e130319ed8
+#6  0x55e13030b70e
+#7  0x7fb06f52eb96
+#8  0x55e13030b749
+#9  0xffffffffffffffff
+#0  0x7f41032eb32a
+#1  0x7f41032ea503
+#2  0x7f4102967f1f
+#3  0x7f4102ab7f2d
+#4  0x55e5dd64adc5
+#5  0x55e5dd658ed8
+#6  0x55e5dd64a70e
+#7  0x7f410294ab96
+#8  0x55e5dd64a749
+#9  0xffffffffffffffff
+#0  0x7fca250f832a
+#0  0x7fa93fce232a
+#1  0x7fa93fce1503
+#2  0x7fa93f35ef1f
+#3  0x7fa93f4aef2d
+#4  0x5628a00b5dc5
+#5  0x5628a00c3ed8
+#6  0x5628a00b570e
+#7  0x7fa93f341b96
+#8  0x5628a00b5749
+#9  0xffffffffffffffff
+#1  0x7fca250f7503
+#2  0x7fca24774f1f
+#3  0x7fca248c4f2d
+#4  0x564b60a83dc5
+#5  0x564b60a91ed8
+#6  0x564b60a8370e
+#7  0x7fca24757b96
+#8  0x564b60a83749
+#9  0xffffffffffffffff
+#0  0x7fcbda5dd32a
+#0  0x7f2a1e8da32a
+#1  0x7f2a1e8d9503
+#2  0x7f2a1df56f1f
+#3  0x7f2a1e0a6f2d
+#4  0x558305fb4dc5
+#5  0x558305fc2ed8
+#6  0x558305fb470e
+#7  0x7f2a1df39b96
+#8  0x558305fb4749
+#9  0xffffffffffffffff
+#1  0x7fcbda5dc503
+#2  0x7fcbd9c59f1f
+#3  0x7fcbd9da9f2d
+#4  0x5560acf8edc5
+#5  0x5560acf9ced8
+#6  0x5560acf8e70e
+#7  0x7fcbd9c3cb96
+#8  0x5560acf8e749
+#9  0xffffffffffffffff
+#0  0x7f46afe1b32a
+#1  0x7f46afe1a503
+#2  0x7f46af497f1f
+#3  0x7f46af5e7f2d
+#4  0x55f8712d0dc5
+#5  0x55f8712deed8
+#6  0x55f8712d070e
+#7  0x7f46af47ab96
+#8  0x55f8712d0749
+#9  0xffffffffffffffff
+#0  0x7fbb8a96a32a
+#0  0x7f49d213532a
+#1  0x7f49d2134503
+#2  0x7f49d17b1f1f
+#3  0x7f49d1901f2d
+#4  0x5596e1e40dc5
+#5  0x5596e1e4eed8
+#6  0x5596e1e4070e
+#7  0x7f49d1794b96
+#8  0x5596e1e40749
+#9  0xffffffffffffffff
+#1  0x7fbb8a969503
+#2  0x7fbb89fe6f1f
+#3  0x7fbb8a136f2d
+#4  0x55c1a36bedc5
+#5  0x55c1a36cced8
+#6  0x55c1a36be70e
+#7  0x7fbb89fc9b96
+#8  0x55c1a36be749
+#9  0xffffffffffffffff
+#0  0x7fde4c19832a
+#1  0x7fde4c197503
+#2  0x7fde4b814f1f
+#3  0x7fde4b964f2d
+#4  0x55fe0d691dc5
+#5  0x55fe0d69fed8
+#6  0x55fe0d69170e
+#7  0x7fde4b7f7b96
+#8  0x55fe0d691749
+#9  0xffffffffffffffff
+#0  0x7efdb1d5632a
+#1  0x7efdb1d55503
+#2  0x7efdb13d2f1f
+#3  0x7efdb1522f2d
+#4  0x564ca2fcadc5
+#5  0x564ca2fd8ed8
+#6  0x564ca2fca70e
+#7  0x7efdb13b5b96
+#8  0x564ca2fca749
+#9  0xffffffffffffffff
+#0  0x7fdc0ed8c32a
+#0  0x7f1f7fcbb32a
+#1  0x7fdc0ed8b503
+#1  0x7f1f7fcba503
+#2  0x7fdc0e408f1f
+#3  0x7fdc0e558f2d
+#4  0x5601064d4dc5
+#5  0x5601064e2ed8
+#6  0x5601064d470e
+#7  0x7fdc0e3ebb96
+#8  0x5601064d4749
+#9  0xffffffffffffffff
+#2  0x7f1f7f337f1f
+#3  0x7f1f7f487f2d
+#4  0x5559b1966dc5
+#5  0x5559b1974ed8
+#6  0x5559b196670e
+#7  0x7f1f7f31ab96
+#8  0x5559b1966749
+#9  0xffffffffffffffff
+#0  0x7f00e468832a
+#0  0x7f5ca535c32a
+#1  0x7f5ca535b503
+#2  0x7f5ca49d8f1f
+#3  0x7f5ca4b28f2d
+#4  0x5641bb88cdc5
+#5  0x5641bb89aed8
+#6  0x5641bb88c70e
+#7  0x7f5ca49bbb96
+#8  0x5641bb88c749
+#9  0xffffffffffffffff
+#1  0x7f00e4687503
+#2  0x7f00e3d04f1f
+#3  0x7f00e3e54f2d
+#4  0x5618aff4ddc5
+#5  0x5618aff5bed8
+#6  0x5618aff4d70e
+#7  0x7f00e3ce7b96
+#8  0x5618aff4d749
+#9  0xffffffffffffffff
+#0  0x7fae589ed32a
+#1  0x7fae589ec503
+#2  0x7fae58069f1f
+#3  0x7fae581b9f2d
+#4  0x55aba2c11dc5
+#5  0x55aba2c1fed8
+#6  0x55aba2c1170e
+#7  0x7fae5804cb96
+#8  0x55aba2c11749
+#9  0xffffffffffffffff
+#0  0x7f0e53d7732a
+#1  0x7f0e53d76503
+#2  0x7f0e533f3f1f
+#3  0x7f0e53543f2d
+#4  0x558d71d6ddc5
+#5  0x558d71d7bed8
+#6  0x558d71d6d70e
+#7  0x7f0e533d6b96
+#8  0x558d71d6d749
+#9  0xffffffffffffffff
+#0  0x7f1547f5c32a
+#1  0x7f1547f5b503
+#2  0x7f15475d8f1f
+#3  0x7f1547728f2d
+#4  0x55bdaef39dc5
+#5  0x55bdaef47ed8
+#6  0x55bdaef3970e
+#7  0x7f15475bbb96
+#8  0x55bdaef39749
+#9  0xffffffffffffffff
+#0  0x7f0722e2e32a
+#1  0x7f0722e2d503
+#2  0x7f07224aaf1f
+#3  0x7f07225faf2d
+#4  0x560cb414cdc5
+#5  0x560cb415aed8
+#6  0x560cb414c70e
+#7  0x7f072248db96
+#8  0x560cb414c749
+#9  0xffffffffffffffff
+#0  0x7f3f8120132a
+#1  0x7f3f81200503
+#2  0x7f3f8087df1f
+#3  0x7f3f809cdf2d
+#4  0x5651841a8dc5
+#5  0x5651841b6ed8
+#6  0x5651841a870e
+#7  0x7f3f80860b96
+#8  0x5651841a8749
+#9  0xffffffffffffffff
+#0  0x7fbdcbcc432a
+#1  0x7fbdcbcc3503
+#2  0x7fbdcb340f1f
+#3  0x7fbdcb490f2d
+#4  0x55ce8b89bdc5
+#5  0x55ce8b8a9ed8
+#6  0x55ce8b89b70e
+#7  0x7fbdcb323b96
+#8  0x55ce8b89b749
+#9  0xffffffffffffffff
+--------------------------------------------------------------------------
+mpirun noticed that process rank 29 with PID 4415 on node 3.234.146.51 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[ip-172-31-4-37:07308] 31 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-4-37:07308] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-4-37:07308] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

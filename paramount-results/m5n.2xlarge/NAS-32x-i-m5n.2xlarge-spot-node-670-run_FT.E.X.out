@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------
+[[53456,1],224]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-3-55
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 4096x2048x2048  (class E)
+ Iterations          :             25
+ Number of processes :            256
+ Processor array     :         1x 256
+ Layout type         :             1D
+[ip-172-31-0-250:07545] 255 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-0-250:07545] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+ Initialization time =     57.1243
+
+Init time,111.498368
+ T =    1     Checksum =    5.121601045346D+02    5.117395998266D+02
+Iteration,1,160.272553,48.773399
+ T =    2     Checksum =    5.120905403678D+02    5.118614716182D+02
+Iteration,2,207.615237,47.342097
+ T =    3     Checksum =    5.120623229306D+02    5.119074203747D+02
+Iteration,3,254.810168,47.194381
+ T =    4     Checksum =    5.120438418997D+02    5.119345900733D+02
+Iteration,4,301.407126,46.595813
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 193 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-0-250:07545] 10 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-0-250:07545] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491
