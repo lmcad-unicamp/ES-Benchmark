@@ -1,0 +1,30 @@
+--------------------------------------------------------------------------
+[[14297,1],183]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-6-174
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 4096x2048x2048  (class E)
+ Iterations          :             25
+ Number of processes :            192
+ Processor array     :         1x 128
+ WARNING: Number of processes is not power of two (128).  Will not verify.
+ Layout type         :             1D
+[ip-172-31-6-61:16675] 191 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-6-61:16675] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+mpirun noticed that process rank 38 with PID 16861 on node 3.210.205.81 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+[ip-172-31-6-61:16675] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

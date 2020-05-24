@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------
+[[1196,1],63]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-15-38
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+[ip-172-31-15-38:34553] 71 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-15-38:34553] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ Size: 2048x2048x2048  (class E)
+ Iterations:   50
+ WARNING: The benchmark requires power-of-two processes.
+ Number of active processes:     64
+ Total number of processes:     72
+
+--------------------------------------------------------------------------
+mpirun noticed that process rank 3 with PID 34633 on node 34.239.233.197 exited on signal 9 (Killed).
+--------------------------------------------------------------------------

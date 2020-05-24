@@ -1,0 +1,64 @@
+--------------------------------------------------------------------------
+[[37648,1],375]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-10-93
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                :  512x 512x 512  (class C)
+ Iterations          :             20
+ Number of processes :            384
+ Processor array     :         1x 256
+ WARNING: Number of processes is not power of two (256).  Will not verify.
+ Layout type         :             1D
+
+ Initialization time =      4.6002
+
+[ip-172-31-4-235:04489] 383 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-4-235:04489] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Init time,5.430915
+ T =    1     Checksum =    1.415977531947D+02    1.406951235200D+02
+Iteration,1,5.603684,0.169824
+ T =    2     Checksum =    1.250345987536D+02    1.248822145377D+02
+Iteration,2,5.764725,0.160987
+ T =    3     Checksum =    1.189779413260D+02    1.177064830798D+02
+Iteration,3,5.921368,0.156634
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 269 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-0-223:04188] Read -1, expected 21840, errno = 3
+--------------------------------------------------------------------------
+An MPI communication peer process has unexpectedly disconnected.  This
+usually indicates a failure in the peer process (e.g., a crash or
+otherwise exiting without calling MPI_FINALIZE first).
+
+Although this local MPI process will likely now behave unpredictably
+(it may even hang or crash), the root cause of this problem is the
+failure of the peer -- that is what you need to investigate.  For
+example, there may be a core file that you can examine.  More
+generally: such peer hangups are frequently caused by application bugs
+or other external events.
+
+  Local host: ip-172-31-7-97
+  Local PID:  4161
+  Peer host:  ip-172-31-0-223
+--------------------------------------------------------------------------
+[ip-172-31-4-235:04489] 127 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-4-235:04489] 51 more processes have sent help message help-mpi-btl-tcp.txt / peer hung up
+[ip-172-31-4-235:04489] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------
+[[48015,1],567]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-4-47
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 4096x2048x2048  (class E)
+ Iterations          :             25
+ Number of processes :            576
+ Processor array     :         1x 512
+ WARNING: Number of processes is not power of two (512).  Will not verify.
+ Layout type         :             1D
+[ip-172-31-15-38:14810] 575 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-15-38:14810] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+ Initialization time =     27.5511
+
+Init time,51.705251
+ T =    1     Checksum =    9.406354827302D+00    2.555516559773D+00
+Iteration,1,73.894330,22.186482
+ T =    2     Checksum =    6.060518724217D+00    2.899428728070D+00
+Iteration,2,95.361944,21.466753
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 515 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ T =    3     Checksum =    4.459364713853D+00    2.818492297867D+00
+Iteration,3,117.547821,22.184933
+[ip-172-31-15-38:14810] 1 more process has sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-15-38:14810] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

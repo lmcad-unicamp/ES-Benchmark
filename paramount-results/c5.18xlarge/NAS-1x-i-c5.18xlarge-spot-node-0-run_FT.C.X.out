@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------
+[[632,1],63]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-8-55
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                :  512x 512x 512  (class C)
+ Iterations          :             20
+ Number of processes :             72
+ Processor array     :         1x  64
+ WARNING: Number of processes is not power of two (64).  Will not verify.
+ Layout type         :             1D
+
+ Initialization time =      0.5805
+
+Init time,1.562557
+ T =    1     Checksum =    1.131474906722D+01    1.225501563996D+01
+Iteration,1,1.941499,0.377963
+ T =    2     Checksum =    9.415671990586D+00    1.055587407025D+01
+Iteration,2,2.278815,0.335153
+ T =    3     Checksum =    9.496770694694D+00    1.176003373834D+01
+Iteration,3,2.620064,0.339031
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 69 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-8-55:29696] 71 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-8-55:29696] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-8-55:29696] 7 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-8-55:29696] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491
