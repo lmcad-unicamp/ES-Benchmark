@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------
+[[51427,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-5-249
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 2048x1024x1024  (class D)
+ Iterations          :             25
+ Number of processes :             32
+ Processor array     :         1x  32
+ Layout type         :             1D
+[ip-172-31-5-249:14830] 31 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-5-249:14830] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+ Initialization time =     15.9533
+
+Init time,30.753180
+ T =    1     Checksum =    5.122230065252D+02    5.118534037109D+02
+Iteration,1,44.510410,13.756577
+ T =    2     Checksum =    5.120463975765D+02    5.117061181082D+02
+Iteration,2,57.516892,13.006335
+ T =    3     Checksum =    5.119865766760D+02    5.117096364601D+02
+Iteration,3,70.496898,12.979541
+ T =    4     Checksum =    5.119518799488D+02    5.117373863950D+02
+Iteration,4,83.483515,12.986585
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 5 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ T =    5     Checksum =    5.119269088223D+02    5.117680347632D+02
+Iteration,5,96.419329,12.935673
+[ip-172-31-5-249:14830] 29 more processes have sent help message help-mpi-api.txt / mpi-abort

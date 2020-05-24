@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------
+[[47558,1],161]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-3-2
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 4096x2048x2048  (class E)
+ Iterations          :             25
+ Number of processes :            256
+ Processor array     :         1x 256
+ Layout type         :             1D
+[ip-172-31-13-222:05487] 255 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-222:05487] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-6-172][[47558,1],143][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.9.31 failed: Connection refused (111)
+[ip-172-31-15-135][[47558,1],207][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.212 failed: Connection refused (111)
+[ip-172-31-8-23][[47558,1],255][btl_tcp_endpoint.c:602:mca_btl_tcp_endpoint_recv_blocking] recv(23, 0/8) failed: Connection reset by peer (104)
+[ip-172-31-8-23:04142] pml_ob1_sendreq.c:233 FATAL
+[ip-172-31-7-155][[47558,1],47][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.4.157 failed: Connection refused (111)
+[ip-172-31-6-235][[47558,1],127][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.6.172 failed: Connection refused (111)
+--------------------------------------------------------------------------
+An MPI communication peer process has unexpectedly disconnected.  This
+usually indicates a failure in the peer process (e.g., a crash or
+otherwise exiting without calling MPI_FINALIZE first).
+
+Although this local MPI process will likely now behave unpredictably
+(it may even hang or crash), the root cause of this problem is the
+failure of the peer -- that is what you need to investigate.  For
+example, there may be a core file that you can examine.  More
+generally: such peer hangups are frequently caused by application bugs
+or other external events.
+
+  Local host: ip-172-31-3-2
+  Local PID:  4092
+  Peer host:  ip-172-31-9-31
+--------------------------------------------------------------------------
+[ip-172-31-3-2][[47558,1],175][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.3.158 failed: Connection refused (111)
+[ip-172-31-3-2][[47558,1],174][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.3.158 failed: Connection refused (111)
+[ip-172-31-15-212][[47558,1],223][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.3.101 failed: Connection refused (111)
+[ip-172-31-15-212][[47558,1],222][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.3.101 failed: Connection refused (111)
+--------------------------------------------------------------------------
+mpirun noticed that process rank 183 with PID 4061 on node 3.216.36.95 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+14 total processes killed (some possibly by mpirun during cleanup)
+[ip-172-31-13-222:05487] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

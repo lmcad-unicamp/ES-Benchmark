@@ -1,0 +1,69 @@
+--------------------------------------------------------------------------
+[[59361,1],128]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-11-66
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size: 2048x2048x2048  (class E)
+ Iterations:   50
+ Total number of processes:    256
+
+[ip-172-31-5-249:05868] 255 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-5-249:05868] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+ Initialization time:           6.448 seconds
+
+Init time,7.820465
+  iter    1
+Iteration,1,11.227295,3.406373
+Iteration,2,14.666664,3.438874
+Iteration,3,18.023416,3.356285
+Iteration,4,21.423920,3.400084
+  iter    5
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 166 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-2-133][[59361,1],224][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],225][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],226][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],227][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],232][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],233][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],234][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],235][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],236][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],237][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],238][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-2-133][[59361,1],239][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],208][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],208][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],209][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],209][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],210][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],210][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],211][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],211][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],220][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],221][btl_tcp_frag.c:137:mca_btl_tcp_frag_send] mca_btl_tcp_frag_send: writev failed: Connection reset by peer (104)
+[ip-172-31-6-54][[59361,1],222][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+[ip-172-31-6-54][[59361,1],223][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.69 failed: Connection refused (111)
+Iteration,5,24.864924,3.440553
+[ip-172-31-5-249:05868] 159 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-5-249:05868] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

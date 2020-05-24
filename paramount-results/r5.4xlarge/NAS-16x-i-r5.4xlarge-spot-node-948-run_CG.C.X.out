@@ -1,0 +1,63 @@
+Warning: Permanently added '3.228.6.11' (ECDSA) to the list of known hosts.
+Warning: Permanently added '100.24.125.113' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.201.21.0' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.238.27.22' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.239.227.218' (ECDSA) to the list of known hosts.
+Warning: Permanently added '35.153.39.116' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.200.242.131' (ECDSA) to the list of known hosts.
+Warning: Permanently added '18.206.149.136' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.218.208.164' (ECDSA) to the list of known hosts.
+Warning: Permanently added '18.206.153.109' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.235.150.188' (ECDSA) to the list of known hosts.
+Warning: Permanently added '3.210.199.74' (ECDSA) to the list of known hosts.
+Warning: Permanently added '100.27.38.230' (ECDSA) to the list of known hosts.
+Warning: Permanently added '34.234.167.117' (ECDSA) to the list of known hosts.
+Warning: Permanently added '100.26.3.145' (ECDSA) to the list of known hosts.
+Warning: Permanently added '35.169.117.175' (ECDSA) to the list of known hosts.
+--------------------------------------------------------------------------
+[[47793,1],147]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-3-172
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- CG Benchmark
+
+ Size:     150000  (class C)
+ Iterations:    75
+ Number of processes:   256
+ Number of nonzeroes per row:       15
+ Eigenvalue shift:   110.000
+Init time,1.547370
+
+   iteration           ||r||                 zeta
+        1       0.15531186829697E-12   109.9994423237398
+Iteration,1,1.597590,0.049969
+        2       0.46208264129503E-15    27.3920437146521
+Iteration,2,1.661016,0.063205
+        3       0.45737147998471E-15    28.0339761840268
+Iteration,3,1.714327,0.053200
+        4       0.45635407607581E-15    28.4191507551293
+Iteration,4,1.776390,0.061956
+        5       0.45697970475168E-15    28.6471670038896
+Iteration,5,1.840746,0.064237
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 10 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-5-222:02595] 255 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-5-222:02595] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-5-222:02595] 255 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-5-222:02595] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

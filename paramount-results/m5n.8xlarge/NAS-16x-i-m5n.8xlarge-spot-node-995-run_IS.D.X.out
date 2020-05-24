@@ -1,0 +1,44 @@
+--------------------------------------------------------------------------
+[[13910,1],439]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-5-21
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- IS Benchmark
+
+ Size:  2147483648  (class D)
+ Iterations:   10
+ Number of processes:     512
+
+   iteration
+Init time,3.489872
+        1
+Iteration,1,4.684978,1.195097
+        2
+[ip-172-31-15-10:05247] 511 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-15-10:05247] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Iteration,2,5.466030,0.780731
+        3
+Iteration,3,6.664388,1.198035
+        4
+Iteration,4,7.857675,1.192981
+        5
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 453 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-15-10:05247] 451 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-15-10:05247] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

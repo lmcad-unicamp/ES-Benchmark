@@ -1,0 +1,402 @@
+--------------------------------------------------------------------------
+[[54464,1],21]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-14-228
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+#0  0x7f79f34ea32a
+#1  0x7f79f34e9503
+#2  0x7f79f2b66f1f
+#3  0x7f79f2cb6f2d
+#4  0x562a33798dc5
+#5  0x562a337a6ed8
+#6  0x562a3379870e
+#7  0x7f79f2b49b96
+#8  0x562a33798749
+#9  0xffffffffffffffff
+#0  0x7f804d9f432a
+#1  0x7f804d9f3503
+#2  0x7f804d070f1f
+#3  0x7f804d1c0f2d
+#4  0x5600e73c9dc5
+#5  0x5600e73d7ed8
+#6  0x5600e73c970e
+#7  0x7f804d053b96
+#8  0x5600e73c9749
+#9  0xffffffffffffffff
+#0  0x7f15fba3432a
+#1  0x7f15fba33503
+#2  0x7f15fb0b0f1f
+#3  0x7f15fb200f2d
+#4  0x561dcb1c4dc5
+#5  0x561dcb1d2ed8
+#6  0x561dcb1c470e
+#7  0x7f15fb093b96
+#8  0x561dcb1c4749
+#9  0xffffffffffffffff
+#0  0x7f5075c1032a
+#1  0x7f5075c0f503
+#2  0x7f507528cf1f
+#3  0x7f50753dcf2d
+#4  0x55a5e29dcdc5
+#5  0x55a5e29eaed8
+#6  0x55a5e29dc70e
+#7  0x7f507526fb96
+#8  0x55a5e29dc749
+#9  0xffffffffffffffff
+#0  0x7f052a8e032a
+#1  0x7f052a8df503
+#2  0x7f0529f5cf1f
+#3  0x7f052a0acf2d
+#4  0x5635e5dd7dc5
+#5  0x5635e5de5ed8
+#6  0x5635e5dd770e
+#7  0x7f0529f3fb96
+#8  0x5635e5dd7749
+#9  0xffffffffffffffff
+#0  0x7f096d0b632a
+#1  0x7f096d0b5503
+#2  0x7f096c732f1f
+#3  0x7f096c882f2d
+#4  0x56107db69dc5
+#5  0x56107db77ed8
+#6  0x56107db6970e
+#7  0x7f096c715b96
+#8  0x56107db69749
+#9  0xffffffffffffffff
+#0  0x7f98e6c0f32a
+#1  0x7f98e6c0e503
+#2  0x7f98e628bf1f
+#3  0x7f98e63dbf2d
+#4  0x5653db095dc5
+#5  0x5653db0a3ed8
+#6  0x5653db09570e
+#7  0x7f98e626eb96
+#8  0x5653db095749
+#9  0xffffffffffffffff
+#0  0x7f863ab5a32a
+#1  0x7f863ab59503
+#2  0x7f863a1d6f1f
+#3  0x7f863a326f2d
+#4  0x559d3f3f0dc5
+#5  0x559d3f3feed8
+#6  0x559d3f3f070e
+#7  0x7f863a1b9b96
+#8  0x559d3f3f0749
+#9  0xffffffffffffffff
+#0  0x7f5496cb232a
+#1  0x7f5496cb1503
+#2  0x7f549632ef1f
+#3  0x7f549647ef2d
+#4  0x558876a5ddc5
+#5  0x558876a6bed8
+#6  0x558876a5d70e
+#7  0x7f5496311b96
+#8  0x558876a5d749
+#9  0xffffffffffffffff
+#0  0x7f677ba3032a
+#1  0x7f677ba2f503
+#2  0x7f677b0acf1f
+#3  0x7f677b1fcf2d
+#4  0x55c917130dc5
+#5  0x55c91713eed8
+#6  0x55c91713070e
+#7  0x7f677b08fb96
+#8  0x55c917130749
+#9  0xffffffffffffffff
+#0  0x7fa3a758832a
+#1  0x7fa3a7587503
+#2  0x7fa3a6c04f1f
+#3  0x7fa3a6d54f2d
+#4  0x559e2ba0ddc5
+#5  0x559e2ba1bed8
+#6  0x559e2ba0d70e
+#7  0x7fa3a6be7b96
+#8  0x559e2ba0d749
+#9  0xffffffffffffffff
+#0  0x7fa08460e32a
+#1  0x7fa08460d503
+#2  0x7fa083c8af1f
+#3  0x7fa083ddaf2d
+#4  0x55f3c0524dc5
+#5  0x55f3c0532ed8
+#6  0x55f3c052470e
+#7  0x7fa083c6db96
+#8  0x55f3c0524749
+#9  0xffffffffffffffff
+#0  0x7f7d6053432a
+#1  0x7f7d60533503
+#2  0x7f7d5fbb0f1f
+#3  0x7f7d5fd00f2d
+#4  0x556c243e2dc5
+#5  0x556c243f0ed8
+#6  0x556c243e270e
+#7  0x7f7d5fb93b96
+#8  0x556c243e2749
+#9  0xffffffffffffffff
+#0  0x7f244014e32a
+#1  0x7f244014d503
+#2  0x7f243f7caf1f
+#3  0x7f243f91af2d
+#4  0x557fbff02dc5
+#5  0x557fbff10ed8
+#6  0x557fbff0270e
+#7  0x7f243f7adb96
+#8  0x557fbff02749
+#9  0xffffffffffffffff
+#0  0x7f26fecae32a
+#1  0x7f26fecad503
+#2  0x7f26fe32af1f
+#3  0x7f26fe47af2d
+#4  0x555c8ace3dc5
+#5  0x555c8acf1ed8
+#6  0x555c8ace370e
+#7  0x7f26fe30db96
+#8  0x555c8ace3749
+#9  0xffffffffffffffff
+#0  0x7f688271532a
+#1  0x7f6882714503
+#2  0x7f6881d91f1f
+#3  0x7f6881ee1f2d
+#4  0x55767dedbdc5
+#5  0x55767dee9ed8
+#6  0x55767dedb70e
+#7  0x7f6881d74b96
+#8  0x55767dedb749
+#9  0xffffffffffffffff
+#0  0x7f1c58c9b32a
+#1  0x7f1c58c9a503
+#2  0x7f1c58317f1f
+#3  0x7f1c58467f2d
+#4  0x557a0cc46dc5
+#5  0x557a0cc54ed8
+#6  0x557a0cc4670e
+#7  0x7f1c582fab96
+#8  0x557a0cc46749
+#9  0xffffffffffffffff
+#0  0x7f8e25e0032a
+#1  0x7f8e25dff503
+#2  0x7f8e2547cf1f
+#3  0x7f8e255ccf2d
+#4  0x55f38eaa3dc5
+#5  0x55f38eab1ed8
+#6  0x55f38eaa370e
+#7  0x7f8e2545fb96
+#8  0x55f38eaa3749
+#9  0xffffffffffffffff
+#0  0x7f6b65ce732a
+#1  0x7f6b65ce6503
+#2  0x7f6b65363f1f
+#3  0x7f6b654b3f2d
+#4  0x561fcde8adc5
+#5  0x561fcde98ed8
+#6  0x561fcde8a70e
+#7  0x7f6b65346b96
+#8  0x561fcde8a749
+#9  0xffffffffffffffff
+#0  0x7fada5e1332a
+#1  0x7fada5e12503
+#2  0x7fada548ff1f
+#3  0x7fada55dff2d
+#4  0x55c618358dc5
+#5  0x55c618366ed8
+#6  0x55c61835870e
+#7  0x7fada5472b96
+#8  0x55c618358749
+#9  0xffffffffffffffff
+#0  0x7f7fbb85a32a
+#1  0x7f7fbb859503
+#2  0x7f7fbaed6f1f
+#3  0x7f7fbb026f2d
+#4  0x55bc7d733dc5
+#5  0x55bc7d741ed8
+#6  0x55bc7d73370e
+#7  0x7f7fbaeb9b96
+#8  0x55bc7d733749
+#9  0xffffffffffffffff
+#0  0x7f3b35e9432a
+#1  0x7f3b35e93503
+#2  0x7f3b35510f1f
+#3  0x7f3b35660f2d
+#4  0x55b17b94adc5
+#5  0x55b17b958ed8
+#6  0x55b17b94a70e
+#7  0x7f3b354f3b96
+#8  0x55b17b94a749
+#9  0xffffffffffffffff
+#0  0x7fc270cf632a
+#1  0x7fc270cf5503
+#2  0x7fc270372f1f
+#3  0x7fc2704c2f2d
+#4  0x565077538dc5
+#5  0x565077546ed8
+#6  0x56507753870e
+#7  0x7fc270355b96
+#8  0x565077538749
+#9  0xffffffffffffffff
+#0  0x7f5636f2a32a
+#1  0x7f5636f29503
+#2  0x7f56365a6f1f
+#3  0x7f56366f6f2d
+#4  0x561ec9a2fdc5
+#5  0x561ec9a3ded8
+#6  0x561ec9a2f70e
+#7  0x7f5636589b96
+#8  0x561ec9a2f749
+#9  0xffffffffffffffff
+#0  0x7f5978bd032a
+#1  0x7f5978bcf503
+#2  0x7f597824cf1f
+#3  0x7f597839cf2d
+#4  0x5644382dadc5
+#5  0x5644382e8ed8
+#6  0x5644382da70e
+#7  0x7f597822fb96
+#8  0x5644382da749
+#9  0xffffffffffffffff
+--------------------------------------------------------------------------
+mpirun noticed that process rank 28 with PID 26162 on node 18.213.193.55 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[ip-172-31-14-228:26057] 35 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-14-228:26057] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-14-228:26057] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

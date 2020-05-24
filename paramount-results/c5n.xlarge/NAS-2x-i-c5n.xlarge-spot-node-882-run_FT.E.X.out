@@ -1,0 +1,124 @@
+--------------------------------------------------------------------------
+[[50441,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-11-67
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 4096x2048x2048  (class E)
+ Iterations          :             25
+ Number of processes :              8
+ Processor array     :         1x   8
+ Layout type         :             1D
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+#0  0x7fe0e2a5632a
+#0  0x7f6cac0f832a
+#1  0x7f6cac0f7503
+#2  0x7f6cab774f1f
+#3  0x561ceb0ce169
+#4  0x561ceb0d2aae
+#5  0x561ceb0cb60e
+#6  0x7f6cab757b96
+#7  0x561ceb0cb649
+#8  0xffffffffffffffff
+#0  0x7faad694f32a
+#1  0x7faad694e503
+#2  0x7faad5fcbf1f
+#3  0x55e780b49169
+#4  0x55e780b4daae
+#5  0x55e780b4660e
+#6  0x7faad5faeb96
+#7  0x55e780b46649
+#8  0xffffffffffffffff
+#0  0x7f7b4893f32a
+#1  0x7f7b4893e503
+#2  0x7f7b47fbbf1f
+#3  0x55b0660f3169
+#4  0x55b0660f7aae
+#5  0x55b0660f060e
+#6  0x7f7b47f9eb96
+#7  0x55b0660f0649
+#8  0xffffffffffffffff
+#1  0x7fe0e2a55503
+#2  0x7fe0e20d2f1f
+#3  0x55f085b7f169
+#4  0x55f085b83aae
+#5  0x55f085b7c60e
+#6  0x7fe0e20b5b96
+#7  0x55f085b7c649
+#8  0xffffffffffffffff
+#0  0x7f1aae98232a
+#1  0x7f1aae981503
+#2  0x7f1aadffef1f
+#3  0x559284872169
+#4  0x559284876aae
+#5  0x55928486f60e
+#6  0x7f1aadfe1b96
+#7  0x55928486f649
+#8  0xffffffffffffffff
+#0  0x7fa6a1dc332a
+#1  0x7fa6a1dc2503
+#2  0x7fa6a143ff1f
+#3  0x55cd37c00169
+#4  0x55cd37c04aae
+#0  0x7f8707e8e32a
+#1  0x7f8707e8d503
+#2  0x7f870750af1f
+#3  0x55f3e0103169
+#4  0x55f3e0107aae
+#5  0x55f3e010060e
+#6  0x7f87074edb96
+#7  0x55f3e0100649
+#8  0xffffffffffffffff
+#5  0x55cd37bfd60e
+#6  0x7fa6a1422b96
+#7  0x55cd37bfd649
+#8  0xffffffffffffffff
+--------------------------------------------------------------------------
+mpirun noticed that process rank 4 with PID 10944 on node 18.207.103.170 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[ip-172-31-11-67:18930] 7 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-11-67:18930] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-11-67:18930] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

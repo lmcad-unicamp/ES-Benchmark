@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------
+[[32975,1],279]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-3-53
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                :  512x 512x 512  (class C)
+ Iterations          :             20
+ Number of processes :            384
+ Processor array     :         1x 256
+ WARNING: Number of processes is not power of two (256).  Will not verify.
+ Layout type         :             1D
+
+ Initialization time =      3.6947
+
+Init time,4.241369
+ T =    1     Checksum =    1.415977531947D+02    1.406951235200D+02
+Iteration,1,4.421585,0.177747
+ T =    2     Checksum =    1.250345987536D+02    1.248822145377D+02
+Iteration,2,4.586004,0.163456
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 269 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-5-80:09117] 383 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-5-80:09117] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-5-80:09117] 127 more processes have sent help message help-mpi-api.txt / mpi-abort
+ T =    3     Checksum =    1.189779413260D+02    1.177064830798D+02
+Iteration,3,4.752862,0.165631
+[ip-172-31-13-193][[32975,1],237][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.3.53 failed: Connection refused (111)
+[ip-172-31-13-193][[32975,1],238][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.3.53 failed: Connection refused (111)
+[ip-172-31-13-193][[32975,1],239][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.3.53 failed: Connection refused (111)
+[ip-172-31-5-80:09117] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------
+[[45765,1],9]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-6-28
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size: 2048x2048x2048  (class E)
+ Iterations:   50
+ WARNING: The benchmark requires power-of-two processes.
+ Number of active processes:     64
+ Total number of processes:     72
+
+[ip-172-31-6-28:21426] 71 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-6-28:21426] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-15-26][[45765,1],50][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.6.28 failed: Connection refused (111)
+[ip-172-31-15-26][[45765,1],62][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.6.28 failed: Connection refused (111)
+[warn] Epoll ADD(4) on fd 164 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 173 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 187 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 189 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 193 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 196 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 174 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+[warn] Epoll ADD(4) on fd 191 failed.  Old events were 0; read change was 0 (none); write change was 1 (add): Bad file descriptor
+--------------------------------------------------------------------------
+mpirun noticed that process rank 14 with PID 21518 on node 34.205.26.164 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+[ip-172-31-6-28:21426] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------
+[[54601,1],134]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-9-75
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 2048x1024x1024  (class D)
+ Iterations          :             25
+ Number of processes :            768
+ Processor array     :         1x 512
+ WARNING: Number of processes is not power of two (512).  Will not verify.
+ Layout type         :             1D
+[ip-172-31-9-52:05558] 767 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-9-52:05558] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+ Initialization time =      7.2558
+
+Init time,10.817803
+ T =    1     Checksum =    4.342291800065D+00   -2.991938025573D+00
+Iteration,1,13.518010,2.697595
+ T =    2     Checksum =    3.992835123323D+00   -3.169376562577D+00
+Iteration,2,16.291413,2.772538
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 521 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-3-58][[54601,1],528][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.8.80 failed: Connection refused (111)
+[ip-172-31-3-58][[54601,1],544][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.8.80 failed: Connection refused (111)
+[ip-172-31-6-242][[54601,1],478][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.8.80 failed: Connection refused (111)
+[ip-172-31-9-52:05558] 186 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-9-52:05558] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

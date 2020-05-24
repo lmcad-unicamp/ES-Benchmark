@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------
+[[39999,1],91]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-15-107
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+[ip-172-31-9-52:23744] 95 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-9-52:23744] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+An MPI communication peer process has unexpectedly disconnected.  This
+usually indicates a failure in the peer process (e.g., a crash or
+otherwise exiting without calling MPI_FINALIZE first).
+
+Although this local MPI process will likely now behave unpredictably
+(it may even hang or crash), the root cause of this problem is the
+failure of the peer -- that is what you need to investigate.  For
+example, there may be a core file that you can examine.  More
+generally: such peer hangups are frequently caused by application bugs
+or other external events.
+
+  Local host: ip-172-31-15-107
+  Local PID:  16615
+  Peer host:  ip-172-31-9-52
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 25 with PID 23847 on node 18.204.245.254 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+[ip-172-31-9-52:23744] 2 more processes have sent help message help-mpi-btl-tcp.txt / peer hung up

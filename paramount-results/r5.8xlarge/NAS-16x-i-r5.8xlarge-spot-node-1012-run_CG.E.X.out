@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------
+[[38466,1],289]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-3-17
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- CG Benchmark
+
+ Size:    9000000  (class E)
+ Iterations:   100
+ Number of processes:   512
+ Number of nonzeroes per row:       26
+ Eigenvalue shift:  1500.000
+[ip-172-31-13-3:05792] 511 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-13-3:05792] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Init time,38.749640
+
+   iteration           ||r||                 zeta
+        1       0.12930041951360E-11  1499.9998413806252
+Iteration,1,47.323027,8.573064
+        2       0.38074036305742E-15    72.8774756683722
+Iteration,2,56.005026,8.681214
+        3       0.38727866264796E-15    73.2915890919608
+Iteration,3,64.670282,8.664425
+        4       0.39144977174270E-15    73.6707042243702
+Iteration,4,73.231992,8.561194
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 449 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+        5       0.39359918634240E-15    74.0174332195386
+Iteration,5,81.874859,8.642094
+[ip-172-31-13-3:05792] 511 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-13-3:05792] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

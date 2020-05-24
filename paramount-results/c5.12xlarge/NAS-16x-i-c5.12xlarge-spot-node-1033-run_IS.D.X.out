@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------
+[[55277,1],387]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-2-209
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+ ERROR: Number of processes (768) is not a power of two (512?)
+ Exiting program!
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[55277,1],56]
+  Exit code:    1
+--------------------------------------------------------------------------
+[ip-172-31-9-52:05906] 767 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-9-52:05906] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-9-52:05906] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

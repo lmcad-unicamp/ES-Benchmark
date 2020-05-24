@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------
+[[45981,1],13]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-11-18
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 4096x2048x2048  (class E)
+ Iterations          :             25
+ Number of processes :             16
+ Processor array     :         1x  16
+ Layout type         :             1D
+ Error encountered in allocating space
+ Error encountered in allocating space
+ Error encountered in allocating space
+ Error encountered in allocating space
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 8 in communicator MPI_COMM_WORLD
+with errorcode 16.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ Error encountered in allocating space
+ Error encountered in allocating space
+ Error encountered in allocating space
+ Error encountered in allocating space
+[ip-172-31-15-146][[45981,1],5][btl_tcp_endpoint.c:602:mca_btl_tcp_endpoint_recv_blocking] recv(20, 0/8) failed: Connection reset by peer (104)
+[ip-172-31-15-146:09399] pml_ob1_sendreq.c:189 FATAL
+[ip-172-31-15-146][[45981,1],6][btl_tcp_endpoint.c:602:mca_btl_tcp_endpoint_recv_blocking] recv(20, 0/8) failed: Connection reset by peer (104)
+[ip-172-31-15-146:09400] pml_ob1_sendreq.c:189 FATAL
+[ip-172-31-11-67:16230] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-11-67:16230] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-11-67:16230] 7 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-11-67:16230] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

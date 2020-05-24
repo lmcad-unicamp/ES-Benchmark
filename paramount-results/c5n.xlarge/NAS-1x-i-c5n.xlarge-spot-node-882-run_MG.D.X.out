@@ -1,0 +1,70 @@
+--------------------------------------------------------------------------
+[[56965,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-11-67
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Backtrace for this error:
+#0  0x7f7f0ac5f32a
+#1  0x7f7f0ac5e503
+#2  0x7f7f0a2dbf1f
+#3  0x7f7f0a42bf2d
+#4  0x55be02bc9dc5
+#5  0x55be02bd7e28
+#6  0x55be02bc970e
+#7  0x7f7f0a2beb96
+#8  0x55be02bc9749
+#9  0xffffffffffffffff
+#0  0x7fd851be032a
+#1  0x7fd851bdf503
+#2  0x7fd85125cf1f
+#3  0x7fd8513acf2d
+#4  0x56263d05edc5
+#5  0x56263d06ce28
+#6  0x56263d05e70e
+#7  0x7fd85123fb96
+#8  0x56263d05e749
+#9  0xffffffffffffffff
+#0  0x7f2194bda32a
+#1  0x7f2194bd9503
+#2  0x7f2194256f1f
+#3  0x7f21943a6f2d
+#4  0x55b80a996dc5
+#5  0x55b80a9a4e28
+#6  0x55b80a99670e
+#7  0x7f2194239b96
+#8  0x55b80a996749
+#9  0xffffffffffffffff
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 21196 on node 3.218.142.77 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[ip-172-31-11-67:21118] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-11-67:21118] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-11-67:21118] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491

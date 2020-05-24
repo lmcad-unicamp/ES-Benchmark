@@ -1,0 +1,44 @@
+--------------------------------------------------------------------------
+[[36034,1],17]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-3-94
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size: 1024x1024x1024  (class D)
+ Iterations:   50
+ Total number of processes:     32
+
+
+ Initialization time:           3.128 seconds
+
+Init time,3.714664
+  iter    1
+[ip-172-31-5-222:15440] 31 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-5-222:15440] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Iteration,1,5.092155,1.377168
+Iteration,2,6.450460,1.358052
+Iteration,3,7.806524,1.355752
+Iteration,4,9.175788,1.369026
+  iter    5
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 4 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+Iteration,5,10.548122,1.371986
+[ip-172-31-5-222:15440] 29 more processes have sent help message help-mpi-api.txt / mpi-abort

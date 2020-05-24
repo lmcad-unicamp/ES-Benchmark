@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------
+[[36330,1],2]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-9-52
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                :  512x 512x 512  (class C)
+ Iterations          :             20
+ Number of processes :             96
+ Processor array     :         1x  64
+ WARNING: Number of processes is not power of two (64).  Will not verify.
+ Layout type         :             1D
+
+ Initialization time =      0.8830
+
+Init time,1.905022
+ T =    1     Checksum =    6.200144843041D+01   -2.788618394239D+01
+Iteration,1,2.429946,0.522019
+ T =    2     Checksum =    3.674963232575D+01   -1.510580582955D+01
+Iteration,2,2.935173,0.500318
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 82 in communicator MPI_COMM_WORLD
+with errorcode 0.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[ip-172-31-9-52][[36330,1],46][btl_tcp_endpoint.c:803:mca_btl_tcp_endpoint_complete_connect] connect() to 172.31.15.107 failed: Connection refused (111)
+[ip-172-31-9-52:19733] 95 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ip-172-31-9-52:19733] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[ip-172-31-9-52:19733] 31 more processes have sent help message help-mpi-api.txt / mpi-abort
+[ip-172-31-9-52:19733] PMIX ERROR: BAD-PARAM in file src/dstore/pmix_esh.c at line 491
